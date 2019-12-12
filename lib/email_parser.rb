@@ -10,7 +10,7 @@ class EmailAddressParser
   end
 
   def parse
-    @emails.gsub(","," ").split(" ")
+    @emails = @emails.gsub(","," ").split(" ")
     @emails.uniq
   end
 end
